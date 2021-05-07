@@ -59,12 +59,16 @@ main {
 .recipes {
   display: flex;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: 48px;
 }
 .recipe {
   border-radius: 6px;
   text-decoration: none;
   box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+  transition: 1s;
+}
+.recipe:hover {
+  transform: scale(1.2);
 }
 .recipe .bg {
   display: block;
@@ -75,6 +79,7 @@ main {
   background-color: #cccccc;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
+  height: 140px;
 }
 .recipe .info {
   display: block;
@@ -114,11 +119,18 @@ main {
 .Recipe .title p {
   margin: 0;
 }
-.Recipe a.share {
-  color: white;
+.Recipe .share {
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  color: orange;
   text-decoration: none;
   cursor: pointer;
   font-size: 20px;
+}
+.Recipe .share:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: black;
 }
 
 
